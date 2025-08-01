@@ -423,22 +423,30 @@
             </div>
 
             <!-- Filter Tabs -->
-      <div class="flex justify-center mb-12">
-  <div class="inline-flex flex-wrap justify-center rounded-xl bg-gray-100 p-1 gap-1">
-    <button class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all active" data-filter="all">
-      All Services
-    </button>
-    <button class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all" data-filter="text">
-      Text SMS
-    </button>
-    <button class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all" data-filter="whatsapp">
-      WhatsApp
-    </button>
-    <button class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all" data-filter="voice">
-      Voice Call
-    </button>
-  </div>
-</div>
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex flex-wrap justify-center rounded-xl bg-gray-100 p-1 gap-1">
+                    <button
+                        class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all active"
+                        data-filter="all">
+                        All Services
+                    </button>
+                    <button
+                        class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all"
+                        data-filter="text">
+                        Text SMS
+                    </button>
+                    <button
+                        class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all"
+                        data-filter="whatsapp">
+                        WhatsApp
+                    </button>
+                    <button
+                        class="filter-btn px-3 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all"
+                        data-filter="voice">
+                        Voice Call
+                    </button>
+                </div>
+            </div>
 
             <!-- Text SMS Services -->
             <div class="mb-16 filter-section" data-category="text">
@@ -1041,6 +1049,16 @@
     </a>
     <!-- JavaScript -->
     <script src="script.js"></script>
+
+<button id="goToTopBtn" class="fixed bottom-8 left-8 w-14 h-14 bg-primary-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary-600 transition-all duration-300 opacity-0 invisible z-50">
+  <svg id="progressCircle" class="absolute w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+    <circle class="text-gray-200" stroke-width="2" stroke="currentColor" fill="transparent" r="45" cx="50" cy="50"/>
+    <circle id="progressPath" class="text-white" stroke-width="5" stroke="currentColor" fill="transparent" r="45" cx="50" cy="50" stroke-dasharray="283" stroke-dashoffset="283"/>
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 relative" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+  </svg>
+</button>
 
 </body>
 
