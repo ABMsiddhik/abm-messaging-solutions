@@ -361,3 +361,38 @@ I'm interested in your services. Please contact me.`;
             });
         });
    
+        // JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  const goToTopBtn = document.getElementById('goToTopBtn');
+  const progressPath = document.getElementById('progressPath');
+  
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    
+    // Calculate scroll percentage
+    const scrollPercent = (scrollPosition / (documentHeight - windowHeight)) * 100;
+    const offset = 283 - (scrollPercent * 283 / 100);
+    
+    // Update progress circle
+    progressPath.style.strokeDashoffset = offset;
+    
+    // Show/hide button
+    if (scrollPosition > 300) {
+      goToTopBtn.classList.add('visible');
+    } else {
+      goToTopBtn.classList.remove('visible');
+    }
+  });
+  
+  // Smooth scroll to top
+  goToTopBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
